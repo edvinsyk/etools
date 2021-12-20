@@ -2,3 +2,5 @@
 
 export(e_recode)
 export(tab)
+importFrom(data.table,":=")
+importFrom(data.table,.N)

@@ -16,6 +16,7 @@ e_recode <- function(dt, variable, old, new) {
 data.table::setDT(dt)
 old <- c(old)
 new <- c(new)
+x <- variable
 
 lookup <- data.frame(old, new)
 
