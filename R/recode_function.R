@@ -21,6 +21,6 @@ lookup <- data.frame(old, new)
 
 dt[lookup, on = c(x = "old"), x := new]
 
-print(dt[, data.table::.N, keyby = variable])
+print(dt[, .N, keyby = variable])
 
 }
