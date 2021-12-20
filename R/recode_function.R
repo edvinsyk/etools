@@ -4,6 +4,8 @@
 #' @param variable The variable to recode
 #' @param old a vector of the old values
 #' @param new a vector of the new values
+#' @importFrom data.table :=
+#' @importFrom data.table .N
 #' @keywords recode, lookup
 #' @export
 #' @return Recoded data.table and prints the changes
@@ -12,10 +14,8 @@
 e_recode <- function(dt, variable, old, new) {
 
 data.table::setDT(dt)
-dt <- dt
 old <- c(old)
 new <- c(new)
-x <- as.character(variable)
 
 lookup <- data.frame(old, new)
 

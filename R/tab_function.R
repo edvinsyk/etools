@@ -5,8 +5,9 @@
 #' @param y Optional second variable
 #' @param df the dataframe
 #' @keywords tab, table, tabulate
+#' @importFrom data.table .N
 #' @export
-#' @return Table of (N) cases ordered by x or x, y. 
+#' @return Table of (N) cases ordered by x or x, y.
 #' @examples
 #' tab()
 tab <- function(x = NULL, y = NULL, df = dt) {
